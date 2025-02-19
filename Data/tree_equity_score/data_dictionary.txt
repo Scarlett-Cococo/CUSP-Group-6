@@ -1,0 +1,41 @@
+bge_code: unique code for neighborhood
+bge_type: describes type of neighborhood [LSOA, SOA, Data Zone]
+la_name: name of local authority the neighborhood is mostly located within
+co_name: name of constituency the neighborhood is mostly located within
+reg_name: name of region the neighborhood is mostly located within
+country: name of country the neighborhood is located within
+total_pop: total population of neighborhood from country census
+urban_area: the urban land area of the neighborhood in square kilometers (omits water area)
+urban_pct: the percentage of the neighborhood that is considered urban given our methodology [range:0-1]
+tc_goal: the tree canopy goal of the neighborhood (set to -1 if unavailable for download) [range: -1, 0-1]
+tree_canop: the tree canopy percentage of the neighborhood (set to -1 if unavailable for download) [range: -1, 0-1]
+tc_gap: the tree canopy gap of the neighborhood (goal minus canopy) [range: 0-1]
+priority_i:  the priority index of the neighborhood [range: 0-1]
+inc_rank: neighborhood rank of Indices of Multiple Deprivation - Income Domain, where 1 is the most deprived
+incnorm: normalized value for Indices of Multiple Deprivation - Income Domain [range:0-1]
+inc_dec: neighborhood decile for Indices of Multiple Deprivation - Income Domain, where 1 is the most deprived, [range:1-10]
+emp_rank: neighborhood rank of Indices of Multiple Deprivation - Employment Domain, where 1 is the most deprived
+empnorm: normalized value for Indices of Multiple Deprivation - Employment Domain [range:0-1]
+emp_dec: neighborhood decile for Indices of Multiple Deprivation - Employment Domain, where 1 is the most deprived, [range:1-10]
+hlth_rank: neighborhood rank of Indices of Multiple Deprivation - Health Domain, where 1 is the most deprived
+hlthnorm: normalized value for Indices of Multiple Deprivation - Health Domain [range:0-1]
+hlth_dec: neighborhood decile for Indices of Multiple Deprivation - Health Domain, where 1 is the most deprived, [range:1-10]
+temp_diff: the difference between the average neighborhood heat extremity and the local authority average to measure variance in heat severity across a local authority
+tempnorm: the normalized temp_diff value of the neighborhood [range: 0-1]
+NO2_avg: the annual average NO2 pollution of the neighborhood in micrograms/cubic meter
+PM25_avg: the annual average PM2.5 pollution of the neighborhood in micrograms/cubic meter
+apb_index: a combined measure of pollution calculated by normalizing PM2.5 and NO2 values by country, and averaging those values [range: 0-1]
+dep_ratio: the dependency ratio (childrens + seniors / 18-64 adults)
+depratnorm: the normalized dependency ratio of the neighborhood [range: 0-1]
+dep_perc: the percent of the population that are children and seniors [range: 0-1]
+tes: the Tree Equity Score of the neighborhood [range: 0-100]
+la_tes: the composite score of the local authority aggregated from all neighborhood Tree Equity Scores within the local authority [range: 0-100]
+pctmineth: proportion of the neighborhood population identifying with a minoritised ethnic group [range: 0-1]
+pct_child: the percent of children inside of the neighborhood [range: 0-1]
+pct_senior: the percent of seniors inside of the neighborhood [range: 0-1]
+la_code: unique code for local authority the neighborhood is mostly within
+co_code: unique code for constituencies the neighborhood is mostly within
+peat: whether the neighborhood intersects with peatland (given our peatland dataset) [boolean]
+geometry: the geometry of the block group (for geojson and shapefile)
+
+Questions about methodology or data sources? Visit https://www.uk.treeequityscore.org for more details.
